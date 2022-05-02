@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Header from "../components/Header";
@@ -29,7 +30,7 @@ export default function Home({ posts }: Props) {
       {/* ==========================================================
                     Body Description part start here
       ============================================================*/}
-      <div className="flex justify-between items-center bg-red-500 border-y border-black py-10 lg:py-0">
+      <div className="flex justify-between items-center bg-yellow-500 border-y border-black py-10 lg:py-0">
         <div className="px-10 space-y-5">
           <h1 className="text-5xl max-w-xl font-title">
             <span className="underline decoration-Zinc-900 decoration-4">
@@ -54,7 +55,7 @@ export default function Home({ posts }: Props) {
           <img
             className="hidden md:inline-flex h-32 lg:h-full"
             src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
-            alt=""
+            alt="Image"
           />
         </div>
       </div>
@@ -64,28 +65,30 @@ export default function Home({ posts }: Props) {
       {/* ==========================================================
                     Posts part start here
       ============================================================*/}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 lg:p-6  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 lg:p-6 cursor-pointer ">
         {posts.map((post) => (
           <Link key={post._id} href={`/post/${post.slug.current}`}>
             <div className="bg-white w-full group overflow-hidden">
               <img
                 className="w-full grayscale object-cover h-60 mx-auto transition-transform duration-500 ease-in-out group-hover:grayscale-0 group-hover:scale-105"
                 src={urlFor(post.mainImage).url()!}
-                alt=""
+                alt="Image"
               />
 
-              <div className="flex justify-between p-5 bg-red-100">
+              <div className="flex justify-between p-5 bg-yellow-100">
                 <div>
-                  <p></p>
                   <p className="text-lg font-bold">{post.title}</p>
                   <p className="text-xs">
-                    {post.description} by {post.author.name}
+                    {post.description} by{" "}
+                    <span className="font-body font-bold">
+                      {post.author.name}
+                    </span>
                   </p>
                 </div>
                 <img
                   className="h-14 w-14 rounded-full"
                   src={urlFor(post.author.image).url()!}
-                  alt=""
+                  alt="Image"
                 />
               </div>
             </div>
