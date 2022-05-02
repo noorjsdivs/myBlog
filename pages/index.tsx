@@ -33,9 +33,13 @@ export default function Home({ posts }: Props) {
       <div className="flex justify-between items-center bg-yellow-500 border-y border-black py-10 lg:py-0">
         <div className="px-10 space-y-5">
           <h1 className="text-5xl max-w-xl font-title">
-            <span className="underline decoration-Zinc-900 decoration-4">
-              MERN-2103
-            </span>{" "}
+            <Link href="https://noormohammad-profile.netlify.app/">
+              <a target="_blank">
+                <span className="underline decoration-Zinc-900 decoration-4">
+                  MERN-2103
+                </span>
+              </a>
+            </Link>{" "}
             batch from{" "}
             <span className="font-semibold">CREATIVE IT INSTITUTE</span>.
           </h1>

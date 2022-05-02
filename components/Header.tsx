@@ -11,9 +11,11 @@ function Header() {
         />
       </Link>
       <div className="hidden md:inline-flex items-center space-x-2 font-semibold">
-        <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
-          Home
-        </h3>
+        <Link href="/">
+          <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
+            Home
+          </h3>
+        </Link>
         <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
           Contact
         </h3>
