@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../../components/Header";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
-import { Article } from "../../typings";
 
 interface IFormInput {
   _id: string;
@@ -13,7 +12,7 @@ interface IFormInput {
   article: string;
 }
 
-function article() {
+function Article() {
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
@@ -128,4 +127,4 @@ function article() {
   );
 }
 
-export default article;
+export default Article;
