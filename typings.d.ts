@@ -8,6 +8,7 @@ export interface Post {
     image: string;
   };
   comments: Comment[];
+  article: Article[];
   description: string;
   mainImage: {
     asset: {
@@ -23,6 +24,21 @@ export interface Post {
 export interface Comment {
   approved: boolean;
   comment: string;
+  email: string;
+  name: string;
+  post: {
+    _ref: string;
+    _type: string;
+  };
+  _createdAt: string;
+  _id: string;
+  _rev: string;
+  _type: string;
+  _updatedAt: string;
+}
+export interface Article {
+  article: string;
+  content: string;
   email: string;
   name: string;
   post: {
