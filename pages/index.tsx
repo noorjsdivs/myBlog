@@ -33,25 +33,30 @@ export default function Home({ posts }: Props) {
       <div className="flex justify-between items-center bg-yellow-500 border-y border-black py-10 lg:py-0">
         <div className="px-10 space-y-5">
           <h1 className="text-5xl max-w-xl font-title">
-            <Link href="https://noormohammad-profile.netlify.app/">
+            <Link href="https://noorjsdivs.github.io/portfolio/">
               <a target="_blank">
                 <span className="underline decoration-Zinc-900 decoration-4">
-                  MERN-2103
+                  Noor Mohammad
                 </span>
               </a>
             </Link>{" "}
-            batch from{" "}
-            <span className="font-semibold">CREATIVE IT INSTITUTE</span>.
+            A{" "}
+            <span className="font-semibold leading-tight">
+              FULL STACK WEB DEVELOPER
+            </span>
+            .
           </h1>
           <h2>
-            This blog is dedicated to sum up all the important subjects we have
-            been taught in class.
+            This is a personal blog designed to sort out some common knowledge
+            about Programming.
             <br />
             Fell free to leave a comments about the article. <br />
-            If you want to add an article please procced to{" "}
-            <span className="underline decoration-black font-semibold decoration-2 cursor-pointer">
-              contact page
-            </span>
+            If you want to add your own article please procced to{" "}
+            <Link href="/post/article">
+              <span className="underline decoration-black font-semibold decoration-2 cursor-pointer">
+                Contribute page
+              </span>
+            </Link>
             .
           </h2>
         </div>

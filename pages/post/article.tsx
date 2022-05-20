@@ -51,7 +51,7 @@ function Article() {
       ) : (
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col p-5 max-w-2xl mx-auto font-body"
+          className="flex flex-col p-5 max-w-2xl mx-auto font-body border border-yellow-300 mb-5"
         >
           <h3 className="text-sm text-center text-yellow-500 font-bold mb-1">
             Want to publish your own Article?
