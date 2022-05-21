@@ -4,12 +4,25 @@ import Link from "next/link";
 import Header from "../components/Header";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "../typings";
+import { signIn, signOut, useSession } from "next-auth/react";
+import toast, { Toaster } from "react-hot-toast";
+import { useRouter } from "next/router";
 
 interface Props {
   posts: [Post];
 }
 
 export default function Home({ posts }: Props) {
+  const { data: session } = useSession();
+  const router = useRouter();
+  const handleRouting = () => {
+    if (session) {
+      router.push("/post/article");
+      toast.success("Welcome to the Contribuation !");
+    } else {
+      toast.error(" Please Sign In to get ACCESS !");
+    }
+  };
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
@@ -31,6 +44,8 @@ export default function Home({ posts }: Props) {
                     Body Description part start here
       ============================================================*/}
       <div className="flex justify-between items-center bg-yellow-500 border-y border-black py-10 lg:py-0">
+        <Toaster position="top-center" reverseOrder={false} />
+
         <div className="px-10 space-y-5">
           <h1 className="text-5xl max-w-xl font-title">
             <Link href="https://noorjsdivs.github.io/portfolio/">
@@ -52,11 +67,12 @@ export default function Home({ posts }: Props) {
             <br />
             Fell free to leave a comments about the article. <br />
             If you want to add your own article please procced to{" "}
-            <Link href="/post/article">
-              <span className="underline decoration-black font-semibold decoration-2 cursor-pointer">
-                Contribute page
-              </span>
-            </Link>
+            <span
+              onClick={handleRouting}
+              className="underline decoration-black font-semibold decoration-2 cursor-pointer"
+            >
+              Contribute page
+            </span>
             .
           </h2>
         </div>

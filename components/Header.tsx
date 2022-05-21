@@ -39,9 +39,13 @@ function Header() {
           Contribute
         </h3>
 
-        <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
-          Follow
-        </h3>
+        <Link href="https://noorjsdivs.github.io/portfolio/">
+          <a target="_blank">
+            <h3 className="hover:bg-yellow-300 hover:underline transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
+              HIRE Me
+            </h3>
+          </a>
+        </Link>
       </div>
       <div className="flex items-center space-x-2 text-Zinc-900">
         <img
