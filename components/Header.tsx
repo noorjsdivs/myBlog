@@ -49,7 +49,7 @@ function Header() {
       </div>
       <div className="flex items-center space-x-2 text-Zinc-900">
         <img
-          className="w-8 h-8"
+          className="w-8 h-8 rounded-full"
           src={session?.user?.image || "https://cdn.sanity.io/images/8mjsbi9f/production/923dbacc3559b30a74ec1d2b5be43c49263962dc-500x500.png"}
           alt=""
         />
