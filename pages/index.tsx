@@ -7,6 +7,7 @@ import { Post } from "../typings";
 import { signIn, signOut, useSession } from "next-auth/react";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/router";
+import Footer from "../components/Footer";
 
 interface Props {
   posts: [Post];
@@ -71,9 +72,13 @@ export default function Home({ posts }: Props) {
               onClick={handleRouting}
               className="underline decoration-black font-semibold decoration-2 cursor-pointer"
             >
-              Contribute page
+              Contribute page.
             </span>
-            .
+            <br />
+            Do not miss to see some of my finished{" "}
+            <span className="font-bold underline cursor-pointer">
+              Projects.
+            </span>
           </h2>
         </div>
         <div>
@@ -122,6 +127,13 @@ export default function Home({ posts }: Props) {
       </div>
       {/* ==========================================================
                     Posts part end here
+      ============================================================*/}
+      {/* ==========================================================
+                    Footer part start here
+      ============================================================*/}
+      <Footer />
+      {/* ==========================================================
+                    Footer part end here
       ============================================================*/}
     </div>
   );
