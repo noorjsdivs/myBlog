@@ -30,35 +30,35 @@ function Footer() {
           <ul className="flex gap-3">
             <Link href="https://github.com/noorjsdivs">
               <a target="_blank">
-                <li className="hover:scale-110 duration-500 cursor-pointer hover:text-white">
+                <li className="hover:scale-110 duration-500 cursor-pointer">
                   <FaGithub size={30} />
                 </li>
               </a>
             </Link>
             <Link href="https://www.linkedin.com/in/noor-mohammad-ab2245193/">
               <a target="_blank">
-                <li className="hover:scale-110 duration-500 cursor-pointer hover:text-white">
+                <li className="hover:scale-110 duration-500 cursor-pointer">
                   <FaLinkedin size={30} />
                 </li>
               </a>
             </Link>
             <Link href="https://www.instagram.com/simplenoor143/">
               <a target="_blank">
-                <li className="hover:scale-110 duration-500 cursor-pointer hover:text-white">
+                <li className="hover:scale-110 duration-500 cursor-pointer">
                   <AiOutlineInstagram size={30} />
                 </li>
               </a>
             </Link>
             <Link href="https://www.linkedin.com/in/noor-mohammad-ab2245193/">
               <a target="_blank">
-                <li className="hover:scale-110 duration-500 cursor-pointer hover:text-white">
+                <li className="hover:scale-110 duration-500 cursor-pointer">
                   <BsFillPersonLinesFill size={30} />
                 </li>
               </a>
             </Link>
             <Link href="https://www.facebook.com/Noorlalu143">
               <a target="_blank">
-                <li className="hover:scale-110 duration-500 cursor-pointer hover:text-white">
+                <li className="hover:scale-110 duration-500 cursor-pointer">
                   <AiFillFacebook size={30} />
                 </li>
               </a>
