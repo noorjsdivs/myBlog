@@ -49,7 +49,7 @@ export default function Home({ posts }: Props) {
 
         <div className="px-10 space-y-5">
           <h1 className="text-5xl max-w-xl font-title">
-            <Link href="https://noorjsdivs.github.io/portfolio/">
+            <Link href="https://noormohmmad.com/">
               <a target="_blank">
                 <span className="underline decoration-Zinc-900 decoration-4">
                   Noor Mohammad
