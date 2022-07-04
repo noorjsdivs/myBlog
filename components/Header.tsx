@@ -19,21 +19,21 @@ function Header() {
   };
 
   return (
-    <header className="max-w-7xl mx-auto bg-yellow-100 flex items-center justify-between p-2 sticky top-0 z-50">
+    <header className="max-w-7xl mx-auto bg-yellow-100 flex items-center justify-between p-3 sticky top-0 z-50">
       <Toaster position="top-center" reverseOrder={false} />
-      <div className="cursor-pointer">
+      <div className="cursor-pointer w-72 lg:w-80">
         <Link href="/">
-          <Image src={LogoImg} width={300} />
+          <Image src={LogoImg} />
         </Link>
       </div>
       <div className="hidden md:inline-flex items-center space-x-2 font-semibold">
         <Link href="/">
-          <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
+          <h3 className="hover:bg-yellow-300 hidden lg:inline-flex transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
             Home
           </h3>
         </Link>
         <Link href="/cyberpost">
-          <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
+          <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md hidden lg:inline-flex">
             Cyber Security
           </h3>
         </Link>
