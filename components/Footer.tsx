@@ -5,17 +5,17 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
 import { BiCopyright } from "react-icons/bi";
+import LogoImg from "../public/logoBlack.png";
+
+import Image from "next/image";
 
 function Footer() {
   return (
-    <div className="max-w-7xl mx-auto bg-yellow-400 flex items-center justify-between p-5 bottom-0 z-50">
+    <div className="max-w-7xl mx-auto bg-yellow-400 flex items-center justify-between p-2 bottom-0 z-50">
       <div className="flex items-center justify-between  w-full">
-        <div className="flex">
+        <div className="flex cursor-pointer">
           <Link href="/">
-            <img
-              className="w-44  object-contain cursor-pointer"
-              src="https://links.papareact.com/yvf"
-            />
+            <Image width={300} src={LogoImg} />
           </Link>
         </div>
         <div className=" hidden md:flex items-center">

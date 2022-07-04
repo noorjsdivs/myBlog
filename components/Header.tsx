@@ -2,6 +2,8 @@ import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/router";
+import LogoImg from "../public/logoBlack.png";
+import Image from "next/image";
 
 function Header() {
   const { data: session } = useSession();
@@ -17,18 +19,22 @@ function Header() {
   };
 
   return (
-    <header className="max-w-7xl mx-auto bg-yellow-100 flex items-center justify-between p-5 sticky top-0 z-50">
+    <header className="max-w-7xl mx-auto bg-yellow-100 flex items-center justify-between p-2 sticky top-0 z-50">
       <Toaster position="top-center" reverseOrder={false} />
-      <Link href="/">
-        <img
-          className="w-44 object-contain cursor-pointer"
-          src="https://links.papareact.com/yvf"
-        />
-      </Link>
+      <div className="cursor-pointer">
+        <Link href="/">
+          <Image src={LogoImg} width={300} />
+        </Link>
+      </div>
       <div className="hidden md:inline-flex items-center space-x-2 font-semibold">
         <Link href="/">
           <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
             Home
+          </h3>
+        </Link>
+        <Link href="/cyberpost">
+          <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
+            Cyber Security
           </h3>
         </Link>
 
@@ -39,7 +45,7 @@ function Header() {
           Contribute
         </h3>
 
-        <Link href="https://noorjsdivs.github.io/portfolio/">
+        <Link href="https://noormohmmad.com/">
           <a target="_blank">
             <h3 className="hover:bg-yellow-300 hover:underline transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md">
               HIRE Me

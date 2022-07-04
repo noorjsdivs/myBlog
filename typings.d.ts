@@ -20,6 +20,28 @@ export interface Post {
   };
   body: [object];
 }
+export interface Cyberpost {
+  _createdAt: string | number | Date;
+  _id: string;
+  _createAt: string;
+  title: string;
+  author: {
+    name: string;
+    image: string;
+  };
+  comments: Comment[];
+  article: Article[];
+  description: string;
+  mainImage: {
+    asset: {
+      url: string;
+    };
+  };
+  slug: {
+    current: string;
+  };
+  body: [object];
+}
 
 export interface Comment {
   approved: boolean;
