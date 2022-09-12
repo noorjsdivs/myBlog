@@ -44,7 +44,7 @@ export default function Home({ posts }: Props) {
       {/* ==========================================================
                     Body Description part start here
       ============================================================*/}
-      <div className="flex justify-between items-center bg-yellow-500 border-y border-black py-10 lg:py-0">
+      <div className="flex justify-between items-center bg-yellow-500  py-10 lg:py-0">
         <Toaster position="top-center" reverseOrder={false} />
 
         <div className="px-10 space-y-5">

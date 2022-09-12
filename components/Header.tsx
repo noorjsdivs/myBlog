@@ -32,10 +32,12 @@ function Header() {
             Home
           </h3>
         </Link>
-        <Link href="/cyberpost">
-          <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md hidden lg:inline-flex">
-            Cyber Security
-          </h3>
+        <Link href="https://noormohammad.live/" passHref>
+          <a target="_blank">
+            <h3 className="hover:bg-yellow-300 transform active:bg-yellow-600 duration-200 ease-in-out px-6 cursor-pointer py-2 rounded-md hidden lg:inline-flex">
+              Cyber Security
+            </h3>
+          </a>
         </Link>
 
         <h3
@@ -53,7 +55,8 @@ function Header() {
           </a>
         </Link>
       </div>
-      <div className="flex items-center space-x-2 text-Zinc-900">
+
+      <div className="flex items-center gap-2">
         <img
           className="w-8 h-8 rounded-full"
           src={
